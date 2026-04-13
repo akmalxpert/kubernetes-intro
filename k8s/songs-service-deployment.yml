@@ -27,7 +27,7 @@ spec:
             - name: SONGS_MS_PORT
               value: "8081"
             - name: SONGS_DB_URL
-              value: "host.minikube.internal"
+              value: "songs-db"
             - name: SONGS_DB_PORT
               value: "5432"
             - name: ENABLE_EUREKA_CLIENT
