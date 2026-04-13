@@ -1,5 +1,4 @@
-# Smaller OS footprint using JRE
-FROM openjdk:21
+FROM eclipse-temurin:17-jre-alpine
 WORKDIR /app
 
 # Copy only the Jar from the current dir
