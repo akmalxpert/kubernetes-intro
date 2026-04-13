@@ -32,3 +32,10 @@ spec:
               value: "5432"
             - name: ENABLE_EUREKA_CLIENT
               value: "false"
+          volumeMounts:
+            - name: songs-storage
+              mountPath: /app/data
+      volumes:
+        - name: songs-storage
+          persistentVolumeClaim:
+            claimName: songs-pvc
